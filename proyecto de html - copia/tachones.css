@@ -1,0 +1,14 @@
+body{
+    background: linear-gradient(to left,
+                           #FF0099,
+                          aqua,
+                          #FF0099);
+  }
+  
+  table{
+      width:95% ;
+   
+  }
+  .t1{
+    height: 35vw;
+  }

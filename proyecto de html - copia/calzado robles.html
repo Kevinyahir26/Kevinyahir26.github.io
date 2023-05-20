@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >
+
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+	
+	
+
+</head>
+
+<style>
+	body {
+		font-family: "Segoe UI", sans-serif;
+		font-size:2vw;
+	}
+	
+	.sidebar {
+		position: fixed;	
+		height: 100%;
+		width: 0;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background: linear-gradient(to left,
+							 #e60fac,
+							rgb(1, 59, 248),
+							#e60fac);
+		overflow-x: hidden;
+		transition: 0.4s;
+		padding: 1rem 0;
+		box-sizing:border-box;
+	}
+	
+	.sidebar .boton-cerrar {
+		position: absolute;
+		top: 0.5rem;
+		right: 1rem;
+		font-size: 2rem;
+		display: block;
+		padding: 0;
+		line-height: 1.5rem;
+		margin: 0;
+		height: 6%;
+		width: 15%;
+		text-align: center;
+		vertical-align: top;
+	}
+	
+	.sidebar ul, .sidebar li{
+		margin:0;
+		padding:0;
+		list-style:none inside;
+	}
+	
+	.sidebar ul {
+		margin: 4rem auto;
+		display: block;
+		width: 80%;
+		min-width:200px;
+	}
+	
+	/*Tamaño y color de letra dentro del menu*/
+	.sidebar a {
+		display: block;
+		font-size: 100%;
+		color: #a0d3ae;
+		text-decoration: none;
+		
+		
+	}
+	
+	.sidebar a:hover{
+		color:#fbf9f9;
+		background-color: #f90;
+	
+	}
+	
+	h1 {
+		color:rgb(9, 241, 16);
+		font-size:150%;
+		font-weight:normal;
+
+
+		width: 15%;
+margin: 30px left;
+
+ background: linear-gradient(
+                        to left,
+                        orange,
+                        red,
+                        orange
+                       
+                        
+                    
+                        );
+	
+
+
+}
+
+.boton{
+	display: block;
+padding: 1% /*posision de letra del boton menu*/ 4%;
+color: rgb(255, 255, 255);
+font-family: 'Open sans';
+text-decoration: none;	
+}
+
+	#contenido {
+		transition: margin-left .4s;
+		/*Posicion del boton menu */
+		padding: 0rem;
+	}
+	
+	/*boton de menu*/
+	.abrir-cerrar {
+		
+		font-size:2vw;   
+		display: block;
+padding: 1px 1px;
+color: white;
+font-family: 'Open sans';
+text-decoration: none;
+	}
+	
+	#abrir {
+		
+	}
+	#cerrar {
+		display:none;
+	}
+
+
+/*Tabla*/
+
+.ta2{
+	width: 80%;
+}
+
+
+	</style>
+
+
+<body>
+<div class="contenedor">
+	
+
+		<header class="bg_animate">
+		
+			<div class="burbujas">
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+				<div class="burbuja"></div>
+			</div>
+
+	
+
+<img src="ima/logo.png" width="1525" height="250" class="logo" >
+
+		
+
+		<div id="sidebar" class="sidebar">
+			<a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+		<ul class="menu">
+			<li><a href="tenis nuevos.html">TENIS NUEVOS.   </a></li><br><br>
+			<li><a href="tenis de segunda.html">TENIS DE SEGUNDA.    </a></li><br><br>
+			<li><a href="tenis deportivos.html">TENIS DEPORTIVOS.</a></li><br><br>
+			<li><a href="tachones.html">TACHONES.</a></li>
+		</ul>
+		  
+		</div>
+		
+		<div id="contenido">
+		 
+		  <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><h1 class="boton">Menú</h1></a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()">Cerrar menu</a>
+		</div>
+		
+		<script>
+		function mostrar() {
+			document.getElementById("sidebar").style.width = "30%";
+			document.getElementById("contenido").style.marginLeft = "300px";
+			document.getElementById("abrir").style.display = "none";
+			document.getElementById("cerrar").style.display = "inline";
+		}
+		
+		function ocultar() {
+			document.getElementById("sidebar").style.width = "0";
+			document.getElementById("contenido").style.marginLeft = "0";
+			document.getElementById("abrir").style.display = "inline";
+			document.getElementById("cerrar").style.display = "none";
+		}
+		</script>
+		
+
+
+		<br>
+	<div class="hero">
+		<marquee behavior="alternate" width="80%"><h1 class="texto">BIENVENIDO.</h1></marquee>
+	</div>
+
+
+
+
+
+
+
+
+<h2><a href="tel:+524831208261"><img src="ima/telefono.png" height="80" width="200" class="tel"></a></h2><br>
+	<h3 class="lema"><font color="white"> Enrique Gandhi 247, Los Naranjos,<br> 79960 Tamazunchale, S.L.P.</font></h3> 
+	
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3718.307291878062!2d-98.78742648506346!3d21.259300485873993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDE1JzMzLjUiTiA5OMKwNDcnMDYuOSJX!5e0!3m2!1ses!2smx!4v1682545850910!5m2!1ses!2smx" class="mapa"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+	<h2 class="texto1">En esta página se venden productos 100% de calidad. 
+	<br>Tenemos tenis deportivos, casual y tambien tachones para jugar futbol.</h2><br>
+
+	<center><table class="ta2"> 
+		<center><tr><td colspan="3"><center ><font class="texto2">Marcas de tenis. </font><br><br></center></td></tr></center>
+		<tr><td><center><br><font class="texto2">NIKE.</font><br><br></center></td><td><center><br> <font class="texto2">ADIDAS.</font> <br><br></center></td> <td><center><br> <font class="texto2">PUMA.</font> <br><br></center></td></tr>
+		<tr><td><center><br><font class="texto2">BROOKS.</font> <br><br></center></td><td><center><br><font class="texto2">ASICS</font>.</center></td> <td><center><br><font class="texto2">UNDER ARMOUR.</font> <br><br></center></td></tr>
+		<tr><td><center><br> <font class="texto2">SOUCONY.</font><br><br></center></td><td><center><br><font class="texto2">HOKA.</font></center></td> <td><center><br><font class="texto2">MIZUNO.</font> <br><br></center></td></tr>
+   
+	   </table></center>
+<br><br><h2 class="texto1">Se hacen entregas a domicilio hasta la puerta de tu casa. <br> Solo en los siguientes lugares.</h2><br><br>
+
+
+<center><table class="ta2"> 
+	 <center><tr><td colspan="3"><center><font class="texto2">Lugares de entrega</font><br><br></center></td></tr></center>
+	 <tr><td><center><br><font class="texto2">Axtla.</font><br><br></center></td><td><center><br> <font class="texto2">Jalpilla. </font><br><br></center></td> <td><center><br> <font class="texto2">Matlapa.</font> <br><br></center></td></tr>
+	 <tr><td><center><br><font class="texto2">Aquismon.</font> <br><br></center></td><td><center><br><font class="texto2">Huichihuayan.</font></center></td> <td><center><br><font class="texto2">Tamazunchale.</font> <br><br></center></td></tr>
+	 <tr><td><center><br> <font class="texto2">San Felipe.</font><br><br></center></td><td><center><br><font class="texto2">Huejutla.</font></center></td> <td><center><br><font class="texto2">Tlanchipñon.</font> <br><br></center></td></tr>
+	 <tr><td><center><br><font class="texto2">Chapul.</font><br><br></td><td><center><br><font class="texto2">Santa Ana.</font><br><br></center></td> <td><center><br><font class="texto2">Pisaflores.</font> <br><br></center></td></tr>
+	 <tr><td><center><br><font class="texto2">Tantoayuca.</font><br><br></center></td><td><center><br><font class="texto2">Escalanar.</font><br><br></center></td> <td><center><br><font class="texto2">Picholco.</font> <br><br></center></td></tr>
+
+	</table></center>
+	
+   <img src="ima/.jpg" align="left" class="imagen"> 
+
+
+	</header>
+
+
+
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+			
